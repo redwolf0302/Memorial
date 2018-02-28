@@ -12,7 +12,8 @@
         <activity
             android:name=".LandingActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.LandingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,13 +21,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetailActivity"
-            android:label="@string/title_detail"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".MainActivity"
             android:label="@string/title_main"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_detail"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
