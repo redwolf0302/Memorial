@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CA4338</color>
+    <color name="colorPrimaryDark">#CA4338</color>
+    <color name="colorAccent">#CA4338</color>
+
+    <color name="landing_page_bg">#CA4338</color>
+</resources>
