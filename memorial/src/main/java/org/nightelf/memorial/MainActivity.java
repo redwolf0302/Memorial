@@ -4,19 +4,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 
 import org.nightelf.memorial.adapters.ArrayRecyclerViewAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView view;
-
+    private RecyclerView recyclerView;
+private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        view = findViewById(R.id.recyclerView);
-        view.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        toolbar = findViewById(R.id.toolbar);
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         RecyclerView.Adapter adapter = new ArrayRecyclerViewAdapter(new String[]{
                 "item",
                 "item",
@@ -83,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 "item",
                 "item",
         });
-        view.setAdapter(adapter);
+        recyclerView.setAdapter(adapter);
     }
 
     @Override

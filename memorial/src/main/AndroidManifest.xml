@@ -22,7 +22,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_main"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.TransparentStatusBar"/>
         <activity
             android:name=".DetailActivity"
             android:label="@string/title_detail"
